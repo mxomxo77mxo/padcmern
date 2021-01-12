@@ -1,0 +1,35 @@
+.divTable {
+    width:auto;
+    background-color:#eee;
+    border-spacing:5px;
+    border-radius: 7px;
+}
+
+.divRow {
+    width:auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.divCell {
+    text-align: center;
+    width: 20%;
+    background-color: #105da0;
+    border-left: solid;
+    padding: 10px 0;
+}
+.fixRow{
+    color: #c3b9b9;
+    border: solid
+}
+
+.input{
+    border-radius: 15px;
+    outline-width: 0px;
+    background-color: rgb(154, 219, 221);
+    min-width: 300px;
+}
+.iconser{
+    color: rgb(148, 156, 154);
+}
+

@@ -1,0 +1,21 @@
+.pagination {
+  margin: 15px auto;
+  display: flex;
+  list-style: none;
+  outline: none;
+}
+
+.pagination > li > a{
+  border: 1px solid #47ccde ;
+  padding: 5px 10px;
+  outline: none;
+  cursor: pointer;
+  border-radius: 50%;
+  margin-left: 10px;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #0a9196
+}
+.pagination > li{
+  list-style-type: none;
+}
