@@ -20,18 +20,11 @@ function App() {
     const dispatch = useDispatch()
 
     useEffect(() => {
+        setLoading(true);
         dispatch(getUsers())
+        setLoading(false);
     }, [currentId, dispatch])
 
-    const fetchAllUsers = async () => {
-        setLoading(true);
-        const res = await axios.get('http://localhost:5000/users');
-        setUsers(res.data);
-        setLoading(false);
-    };
-    useEffect(() => {
-        fetchAllUsers()
-    }, [])
     const paginate = pageNumber => setCurrentPage(pageNumber);
     const indexOfLastUser = currentPage * usersPerPage;
     const indexOfFirstUser = indexOfLastUser - usersPerPage;

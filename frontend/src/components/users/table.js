@@ -1,14 +1,14 @@
 import React, {useState} from "react";
 import {Container, IconButton, InputBase} from "@material-ui/core";
-// import {useSelector} from 'react-redux';
+import {useSelector} from 'react-redux';
 
 import s from './table.module.css'
 import FixPart from "./fixPart";
 import UsersPart from "./usersPart";
 import SearchIcon from "@material-ui/icons/Search";
 
-const Table = ({setCurrentId, loading, users}) => {
-    // const users = useSelector((state) => state.users);
+const Table = ({setCurrentId, loading}) => {
+    const users = useSelector((state) => state.users);
     const [searchTerm, setSerachTerm] = useState('')
     if (loading) {
         return <h2>Loading...</h2>;
